@@ -1,0 +1,25 @@
+def print_matrix(matrix):
+    """
+    Prints a 2D matrix in a formatted way.
+
+    Args:
+        matrix (list of list of int/float): The 2D matrix to be printed.
+    """
+    for row in matrix:
+        print(" ".join(map(str, row)))
+
+def main():
+    print("Welcome to the Matrix Printer")
+
+    # Example matrix
+    matrix = [
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9]
+    ]
+
+    print("Here is the matrix:")
+    print_matrix(matrix)
+
+if __name__ == "__main__":
+    main()
